@@ -29,14 +29,4 @@ const getData = ()=>{
 getData();
 
 
-const person = {
-    fname:"vishal",
-    lname:"shinde",
-    fullname:()=>{
-        console.log(fname+lname);
-    }
-}
-
-
-console.log(person);
 
