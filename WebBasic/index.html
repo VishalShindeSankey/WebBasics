@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer-container">
+        <div class="img-container">
+            <img src="./images/loginImg.png">
+        </div>
+
+        <div class="form-container">
+            <div class="top-container">
+                <p>Welcome back</p>
+                <h1>Login to your account</h1>
+            </div>
+
+            <div class="input-container">
+                <p>Email</p>
+                <input type="email" id="email">
+                <p>Password</p>
+                <input type="password" id="password">
+            </div>
+
+            <div class="forgot-paswd-container">
+                <span><input type="radio"> <p>&nbsp;Remember me</p></span> 
+                <span><a href="">Forgot password ?</a></span>
+            </div>
+
+            <div class="btn-container">
+                <button id="login-btn">Login now</button>
+                <p id="invalid-msg">Invalid username/email !</p>
+                <button id="google-btn"><span class="icon"><img src="./images/google-icon.svg"></span>Or sign-in with google</button>
+            </div>
+
+            <span class="create-account-line"> Don't have an account? <a href="">Join free today</a></span>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

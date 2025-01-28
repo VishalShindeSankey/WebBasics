@@ -1,0 +1,150 @@
+html{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.outer-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.img-container{
+    flex: 0.5;
+    overflow: hidden;
+}
+
+.img-container img{
+    object-fit: contain;
+    width: max-content;
+}
+
+.form-container{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+p{
+    color: gray;
+}
+
+.top-container,.input-container, .forgot-paswd-container, .btn-container{
+    width: 70%;
+    margin: 1rem 0;
+}
+
+.input-container input{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.3rem 0.15rem;
+    margin-top: 0.5rem;
+}
+
+.input-container p{
+    margin-top: 1rem;
+}
+
+
+.forgot-paswd-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forgot-paswd-container span{
+    display: flex;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.btn-container button{
+    height: 2.5rem;
+    border: 0px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-container button:hover{
+    box-shadow: 1px 1px 2px 2px lightgray;
+}
+
+
+#login-btn{
+    background-color: #04C35C;
+}
+
+#invalid-msg{
+    color: red;
+    align-self: center;
+    display: none;
+}
+
+#google-btn{
+    background-color: #2D3748;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img{
+    height: 1.25rem;
+    margin: 0 0.5rem;
+}
+
+.create-account-line{
+    position: absolute;
+    bottom: 1rem;
+}
+
+/* mobile view */
+
+@media only screen and (max-width:605px)  {
+    
+    .img-container{
+        display: none;
+    }
+    
+    .form-container{
+        flex: 1;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./images/loginImg.png');
+        background-size: cover;
+    }
+
+    p{
+        color: gray;
+    }
+
+    h1{
+        color: whitesmoke;
+    }
+
+    .create-account-line{
+        color: gray;
+    }
+    
+    a{
+        color: rgb(26, 147, 228);
+    }
+    
+
+}
+
